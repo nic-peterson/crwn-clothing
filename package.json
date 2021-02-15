@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "crwn-clothing": "github:nic-peterson/crwn-clothing",
     "firebase": "^8.2.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -44,7 +45,13 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
   },
   "browserslist": {
     "production": [
@@ -60,6 +67,10 @@
   },
   "devDependencies": {
     "dart-sass": "^1.25.0",
-    "node-sass": "npm:dart-sass@^1.25.0"
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "node-sass": "npm:dart-sass@^1.25.0",
+    "prettier": "^2.2.1"
   }
 }
